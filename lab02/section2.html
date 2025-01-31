@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Racing+Sans+One&display=swap" rel="stylesheet">
 
     <!-- Including the Font Awesome CSS library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- Title above the navigation bar -->
+    <h1 class="page-title">Kirby World</h1>
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
         <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
+        <a href="index.html">Overview</a>
+        <a href="section1.html">Game Series</a>
 
         <!-- Active link pointing to the section2.html page -->
-        <a class="active" href="section2.html">Section 2</a>
+        <a class="active" href="section2.html">Characters</a>
 
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
+        <a href="section3.html">Media</a>
 
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
         <a href="javascript:void(0);" class="icon">
@@ -34,10 +39,94 @@
 
     <!-- Page content -->
     <div class="content">
-        <!-- Section 2 content -->
-        This is section 2.
-    </div>
+        <h1>Meet the Characters</h1>
+        <p>Explore some of the most **iconic** characters in the Kirby series.</p>
 
+        <!-- Filter Section -->
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterCharacters('all')">All</button>
+            <button class="filter-btn" onclick="filterCharacters('hero')">Heroes</button>
+            <button class="filter-btn" onclick="filterCharacters('rival')">Rivals</button>
+            <button class="filter-btn" onclick="filterCharacters('minion')">Minions</button>
+        </div>
+
+        <!-- Character Cards Section -->
+        <div class="row">
+
+            <!-- Kirby -->
+            <div class="column hero">
+                <div class="card">
+                    <img src="img/Kirby.jpg" alt="Kirby">
+                    <div class="container">
+                        <h2>Kirby</h2>
+                        <p class="title">Star Hero</p>
+                        <p>Kirby is the </strong>hero of Dream Land</strong>, known for his ability to **inhale and copy** abilities!</p>
+                        <p><strong>First Appearance:</strong> Kirby's Dream Land (1992)</p>
+                        <p><strong>Ability:</strong> Copy Powers</p>
+                        <p><strong>Allies:</strong> Bandana Waddle Dee, Meta Knight</p>
+                        <p><strong>Enemies:</strong> King Dedede, Dark Matter</p>
+                        <p>🎤 </strong>Quote:</strong> "Poyo!"</p>
+                        <p><a href="https://kirby.fandom.com/wiki/Kirby" class="button">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- King Dedede -->
+            <div class="column rival">
+                <div class="card">
+                    <img src="img/Kingdede.jpg" alt="King Dedede">
+                    <div class="container">
+                        <h2>King Dedede</h2>
+                        <p class="title">Ruler of Dream Land</p>
+                        <p>King Dedede is </strong>Kirby’s arch-rival</strong>, though sometimes an ally!</p>
+                        <p><strong>First Appearance:</strong> Kirby's Dream Land (1992)</p>
+                        <p><strong>Ability:</strong> Hammer Smash</p>
+                        <p><strong>Allies:</strong> Waddle Dees</p>
+                        <p><strong>Enemies:</strong> Kirby</p>
+                        <p>🎤 </strong>Quote:</strong> "WAHAHAHA!"</p>
+                        <p><a href="https://kirby.fandom.com/wiki/King_Dedede" class="button">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meta Knight -->
+            <div class="column rival">
+                <div class="card">
+                    <img src="img/Metaknight.jpg" alt="Meta Knight">
+                    <div class="container">
+                        <h2>Meta Knight</h2>
+                        <p class="title">Mysterious Warrior</p>
+                        <p>A </strong>skilled swordsman</strong>, sometimes rival, sometimes ally of Kirby.</p>
+                        <p><strong>First Appearance:</strong> Kirby’s Adventure (1993)</p>
+                        <p><strong>Ability:</strong> Sword Techniques</p>
+                        <p><strong>Allies:</strong> Kirby (sometimes)</p>
+                        <p><strong>Enemies:</strong> Dark Matter</p>
+                        <p>🎤 </strong>Quote:</strong> "Come, Kirby! Face me in battle!"</p>
+                        <p><a href="https://kirby.fandom.com/wiki/Meta_Knight" class="button">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Waddle Dee -->
+            <div class="column minion">
+                <div class="card">
+                    <img src="img/Waddledee.jpg" alt="Waddle Dee">
+                    <div class="container">
+                        <h2>Waddle Dee</h2>
+                        <p class="title">Loyal Minion</p>
+                        <p>Friendly but often found </strong>working for King Dedede</strong>.</p>
+                        <p><strong>First Appearance:</strong> Kirby’s Dream Land (1992)</p>
+                        <p><strong>Ability:</strong> Spear Techniques</p>
+                        <p><strong>Allies:</strong> Kirby</p>
+                        <p><strong>Enemies:</strong> None</p>
+                        <p>🎤 </strong>Quote:</strong> "*Waddle Waddle!*"</p>
+                        <p><a href="https://kirby.fandom.com/wiki/Waddle_Dee" class="button">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>
 

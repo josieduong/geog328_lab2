@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Racing+Sans+One&display=swap" rel="stylesheet">
 
     <!-- Including the Font Awesome CSS library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- Title above the navigation bar -->
+    <h1 class="page-title">Kirby World</h1>
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
         <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
+        <a href="index.html">Overview</a>
+        <a href="section1.html">Game Series</a>
+        <a href="section2.html">Characters</a>
 
         <!-- Active link pointing to the section3.html page -->
-        <a class="active" href="section3.html">Section 3</a>
-
-        <a href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
+        <a class="active" href="section3.html">Media</Map></a>
 
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
         <a href="javascript:void(0);" class="icon">
@@ -34,8 +38,38 @@
 
     <!-- Page content -->
     <div class="content">
-        <!-- Section 3 content -->
-        This is section 3.
+        <h1>Kirby Media Hub</h1>
+        <p>Explore fun facts, news and more about the Kirby series!</p>
+        <br>
+        <img src="img/kirbydream.gif" alt="dream">
+                <!-- Fun Facts -->
+        <h2>🎭 Fun Facts About Kirby</h2>
+        <ul>
+            <li>Kirby was originally a placeholder sprite named "Popopo".</li>
+            <li>Masahiro Sakurai, the creator of Kirby, also created Super Smash Bros.</li>
+            <li>Kirby's color was debated: Nintendo wanted yellow, but Sakurai chose <span class="pink-text">pink</span>.</li>
+            <li>Kirby has appeared in over 30 games across multiple platforms!</li>
+        </ul>
+
+        <h2> Kirby Meme of the Day</h2>
+<div class="meme-container">
+    <img src="img/kirby_meme.jpg" alt="Funny Kirby Meme">
+    <br>
+</div>
+        <!-- News Section -->
+        <h2>📰 Latest Kirby News</h2>
+        <p>Stay updated with the latest news about Kirby games, updates, and events!</p>
+        <ul class="news-list">
+            <li><a href="https://www.nintendo.com/us/news/" target="_blank">Nintendo Official News</a></li>
+            <li><a href="https://kirby.nintendo.com/" target="_blank">Kirby Official Website</a></li>
+        </ul>
+<h2>🎥 Kirby in Action!</h2>
+<div class="gif-container">
+    <img src="img/Kirby_eating.gif" alt="Kirby Eating">
+    <br>
+    <img src="img/kirbychase.gif" alt="Kirby Chase">
+    <br>
+</div>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

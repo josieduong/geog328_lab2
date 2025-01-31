@@ -1,6 +1,29 @@
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Racing Sans One', Bold;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.pink-text {
+  color: #f60dc0; /* Kirby pink */
+  font-weight: bold;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgb(240, 170, 241);
+  background-color: #f36dd3;
   overflow: hidden;
 }
 
@@ -17,8 +40,21 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ead6e5;
+  color: rgb(255, 16, 215);
+}
+
+/* Center title */
+.page-title {
+  background-color: #f36dd3;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  color: white;
+  padding: 15px;
 }
 
 /* Add an active class to highlight the current page */
@@ -36,7 +72,461 @@
 .content {
   padding: 14px;
   font-size: 22px;
+  background-color: #f0aaf1;
+  color: white;
 }
+
+/* Make images span the full width of the page */
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- */
+/* Slideshow Styles for section1.html */
+/* -------------------- */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Ensure all images in the slideshow are rectangular */
+.slideshow-container img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Positioning for navigation arrows */
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* Hover effect for arrows */
+.prev:hover, .next:hover {
+  background-color: #ead6e5;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #ead6e5;
+}
+
+/* Number text (1/5, 2/5, etc.) */
+.numbertext {
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 5px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+/* Zebra striped table styles */
+.zebra-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.zebra-table th, .zebra-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.zebra-table tr:nth-child(even) {
+  background-color: #747474; /* Light gray for even rows */
+}
+
+.zebra-table th {
+  background-color: #f36dd3; /* Kirby pink for headers */
+  color: white;
+  text-align: center;
+}
+
+/* Character Cards (Meet the Team Section) */
+/* -------------------- */
+
+/* Three columns side by side */
+.column {
+  flex: 1;
+  max-width: 320px; /* Sets a max width for uniform sizing */
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensure all cards fit neatly in one row */
+.row {
+  display: flex;
+  justify-content: center; /* Centers the cards */
+  gap: 20px; /* Even space between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  align-items: stretch; /* Makes all cards the same height */
+}
+
+/* Make cards stack vertically on small screens */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*Standardize the size of the card */
+.card {
+  width: 100%;
+  max-width: 300px; /* Ensures all cards are the same width */
+  height: auto; /* Allows flexibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all content inside */
+  justify-content: space-between; /* Ensures proper spacing */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  color: black;
+  background-color: white;
+  text-align: center; /* Centers text */
+  padding-bottom: 20px; /* Ensures space for the button */
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 200px; /* Uniform image height */
+  object-fit: cover; /* Ensures images fill the space properly */
+}
+
+/* Add hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Padding inside the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Ensure titles are visible */
+.container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0; /* Adds space around the title */
+  color: black; /* Ensures text is visible */
+  text-align: center;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflow */
+  text-overflow: ellipsis; /* Adds "..." if text overflows */
+}
+
+/* Clear floats */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Title styling */
+.title {
+  color: grey;
+  font-weight: bold;
+}
+
+/* Learn More Button */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #f36dd3; /* Kirby pink */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%; /* Ensures button is centered and smaller */
+  max-width: 200px; /* Prevents button from being too wide */
+  margin-top: auto; /* Ensures it stays at the bottom */
+}
+
+.button:hover {
+  background-color: #d00ea3;
+}
+
+.meme-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.meme-container img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.meme-container img:hover {
+  transform: scale(1.1);
+}
+
+.gif-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gif-container img {
+  width: 250px;
+  height: auto;
+}
+
+.quiz-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f36dd3;
+  color: white;
+  cursor: pointer;
+}
+
+.quiz-button:hover {
+  background-color: #d00ea3;
+}
+
+#quiz-result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Timeline Styling (Using .timeline-content) */
+/* -------------------- */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+/* Timeline line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #f36dd3;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Timeline box */
+.timeline-container {
+  padding: 20px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: white;
+  border: 4px solid #d00ea3;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Left and Right positioning */
+.timeline-container.left {
+  left: 0;
+}
+
+.timeline-container.right {
+  left: 50%;
+}
+
+/* Arrows pointing from the timeline */
+.timeline-container.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline-container.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline-container.right::after {
+  left: -10px;
+}
+
+/* Timeline Content Box */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 6px;
+  color:#f36dd3;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images */
+.timeline-content img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Responsive timeline */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-container::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .timeline-container.left::after, .timeline-container.right::after {
+    left: 15px;
+  }
+
+  .timeline-container.right {
+    left: 0%;
+  }
+}
+
+/* News section */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  margin: 10px 0;
+}
+
+.news-list a {
+  text-decoration: none;
+  color: #d00ea3;
+  font-weight: bold;
+}
+
+.news-list a:hover {
+  color: #f36dd3;
+  text-decoration: underline;
+}
+
+/* -------------------- */
+/* Mobile Responsive Styles */
+/* -------------------- */
 
 /* When the screen is less than 800 pixels wide */
 @media screen and (max-width: 800px) {
@@ -50,12 +540,20 @@
     float: right;
     display: block;
   }
+
+  /* Slideshow images */
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
 }
 
 /* When the screen is less than 800 pixels wide, if the user clicks on the icon */
 /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
 /* This media query sets the style for the unfolded topnav */
-/* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
 @media screen and (max-width: 800px) {
   .topnav.responsive {
     position: relative;
